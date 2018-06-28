@@ -1,0 +1,20 @@
+﻿GİT bash proqram resursları barədə
+GİT Bash proqramıı github.com saytı və internet üzrəindən proqramçılar üçün nəzərdə tutulmuş internet proqram resurslarından istifadə etmək üçün nəzərdə tutulmuşdur. 
+Bu resurslardan istifadə etmək üçün əvvəlcə github.com portalında qeydiyyatdan keçmək lazımdır. 
+Müvafiq login və parol əldə etdikdən sonra qeydiyyatda göstərilən e-mail ünvana göndərilən və hesabın aktivləşdirilməsini təsdiq etmək üçün göndərilən linkə qoşulmaqla github.com portalında işləmək imkanı qazanılır.
+Bundan sonra proqramçı ilə portal arasında davamlı əlaqəni yuxarıda qeyd etdiyimiz “Git Bash” adlı proqram vasitəsilə həyata keçirmək mümkündür. 
+Bu proqram Windows əməliyyat sistemi üçün də nəzərdə tutulmuşdur və portalın özündən sistemə pulsuz yüklənməsi mümkündür. 
+GitBash proqramı consol rejimində işləməklə əməliyyat sistemində həyata keçirilən proqram layihələrinin işçi fayllarını github.com saytı üzərndən Public və Private rejimlərdə digər layihə iştirakçıları ilə paylaşmaq yaxud proqram fraqmentlərinin back-up-larının saxlanılması məqsədilə istifadə edilə bilər.
+İşlənmiş proqram fraqmentlərinin Github.com vasitəsil istifadəsi yuxarıda qeyd etdiyimiz kimi gitbash proqramı vasitəsilə həyata keçiriir. 
+Bu proqram BASH proqramlaşdırma dilinin komponentlərindən istifadə etməklə konsol rejimində işləyir .
+İnternet resursları və əməliyyat sistemi arasında əlaqə yaratmaq üçün ən çox istifadə olunan əmrlərə aşağıdakıları misal göstərə bilərik. 
+$ pwd – əmri hal-hazırda hansı papka daxilində olmağı, daha dəqiq desək cari dəqiq yerləşmə ünvanını təyin edir.
+“$ cd ” – fayl saxlanan ünvanı dəyişmək üçün(change directory) istifadə edilir.
+“$ mkdir ” - yeni papka  yaradılması üçün istifadə edilir.
+“$ dir ” - mövcud papka daxilindəki ierarxiyanı göstərmək üçün istifadə edilir.
+“$ ls ” - mövcud papka daxilində olan fayl və papkaların siyahısını təqdim edir.
+“$ clear ” - yazılmış əmrləri gitbash interfeysindən silmək üçün istifadə edilir.   
+“$ add -A ” - mövcud papka daxilində olan bütün faylların portala yüklənməsi üçün istifadə edilir.
+Mövcud faylların githubşcom-a yüklənməsi zamanı "Repositi" adlandırılan imkan vardır, bu zaman repo - kimi qısa adla yeni layihə papkası yaradılır. 
+Bundan sonra "commit" adlandırılan müracitə formasından istifadə edilir, yəni hansısa repositi-yə bir neçə dəfə "commit" olundu yükləndi və s. dedikdə github.com saytında olan layihə papkasına müvafiq sayda müracət  olunduğu nəzərdə tutulur.
+Buna uyğun olara “$ commit ” 
