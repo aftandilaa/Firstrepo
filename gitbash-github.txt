@@ -8,13 +8,32 @@ GitBash proqramı consol rejimində işləməklə əməliyyat sistemində həyat
 İşlənmiş proqram fraqmentlərinin Github.com vasitəsil istifadəsi yuxarıda qeyd etdiyimiz kimi gitbash proqramı vasitəsilə həyata keçiriir. 
 Bu proqram BASH proqramlaşdırma dilinin komponentlərindən istifadə etməklə konsol rejimində işləyir .
 İnternet resursları və əməliyyat sistemi arasında əlaqə yaratmaq üçün ən çox istifadə olunan əmrlərə aşağıdakıları misal göstərə bilərik. 
+Mövcud faylların githubşcom-a yüklənməsi zamanı "Repositi" adlandırılan imkan vardır, bu zaman repo - kimi qısa adla yeni layihə papkası yaradılır. 
+Bundan sonra "commit" adlandırılan müracitə formasından istifadə edilir, yəni hansısa repositi-yə bir neçə dəfə "commit" olundu yükləndi və s. 
+dedikdə github.com saytında olan layihə papkasına müvafiq sayda müracət  olunduğu nəzərdə tutulur.
+
 $ pwd – əmri hal-hazırda hansı papka daxilində olmağı, daha dəqiq desək cari dəqiq yerləşmə ünvanını təyin edir.
 “$ cd ” – fayl saxlanan ünvanı dəyişmək üçün(change directory) istifadə edilir.
 “$ mkdir ” - yeni papka  yaradılması üçün istifadə edilir.
 “$ dir ” - mövcud papka daxilindəki ierarxiyanı göstərmək üçün istifadə edilir.
 “$ ls ” - mövcud papka daxilində olan fayl və papkaların siyahısını təqdim edir.
 “$ clear ” - yazılmış əmrləri gitbash interfeysindən silmək üçün istifadə edilir.   
+“$  git init ” - əmri repositiyə yükləmə əməliyyatını həyata keçirmək üçün köməkçi fayllar papkası yaradır.
 “$ add -A ” - mövcud papka daxilində olan bütün faylların portala yüklənməsi üçün istifadə edilir.
-Mövcud faylların githubşcom-a yüklənməsi zamanı "Repositi" adlandırılan imkan vardır, bu zaman repo - kimi qısa adla yeni layihə papkası yaradılır. 
-Bundan sonra "commit" adlandırılan müracitə formasından istifadə edilir, yəni hansısa repositi-yə bir neçə dəfə "commit" olundu yükləndi və s. dedikdə github.com saytında olan layihə papkasına müvafiq sayda müracət  olunduğu nəzərdə tutulur.
-Buna uyğun olara “$ commit ” 
+“$ git commit -m "firstcommit” " - yeni commit yaradılması üçün istifadə edilir.
+
+Bu zaman proqram bizdən e-mail ünvanına bağlı olmaqla kimliyimizi təsdiqləyəcək sorğu verir - 
+*** Please tell me who you are.
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+ Müvafiq təsdiq yazdıqdan sonra   “$ git commit -m "firstcommit” " müraciətini yenidən yazırıq. 
+
+Bu aralıqda yüklənmə prosesində github.com saytında istifadəçi profilində yeni repositi yaradırıq (məs. Firstrepo) və növbəti addımda bu addan istifadə edirik.
+
+"$ git remote add origin https://github.com/aftandilaa/Firstrepo.git" sorğusu verilir və biz  "$ git push -u origin master" əmri vasitəsilə 
+faylların bizim yaratdığımız işçi papkadan repositi-yə yüklnməsini təmin edirik. 
+
+Bu aralıqda yüklənmə prosesində github.com bizim istifadəçi profilinə giriş login və parolunun təsdiqini istəyir və bundan sonra bizim göstərdiyimiz fayl yaxud fayllar repositiyə yüklənir. 
+Repositiyə yüklənmiş fayllarda dəyişiklik olduqda, onların yeni commit-lə yenidən yüklənməsi tələb edilir.
+Bu zaman yeni dəyişikliklər yeni commit kimi qeydə alınır və köhnə fayldakı dəyişiliklər qeyd olunmaqla təqdim edilir.
